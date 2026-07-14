@@ -1,0 +1,224 @@
+/* ১. লেআউট এবং স্ট্রাকচার (Layout & Structure) */
+
+.layout-structure {
+    /* Display Properties */
+    display: flex;
+    /* এলিমেন্টগুলোকে মডার্ন ফ্লেক্স লেআউটে সাজানোর জন্য (flex, grid, block, inline, none) */
+    flex-direction: column;
+    /* ফ্লেক্সের ভেতরের জিনিসগুলো পাশাপাশি (row) নাকি নিচে নিচে (column) থাকবে */
+    justify-content: center;
+    /* মেইন অক্ষ বরাবর (ডানে-বামে বা উপর-নিচে) এলিমেন্টকে সেন্টারে আনা */
+    align-items: center;
+    /* ক্রস অক্ষ বরাবর এলিমেন্টকে সেন্টারে আনা */
+    flex-wrap: wrap;
+    /* জায়গা না থাকলে এলিমেন্টগুলো ভেঙে নিচে নেমে আসবে কি না */
+
+    /* Grid Properties */
+    display: grid;
+    /* গ্রিড লেআউট তৈরি করার জন্য */
+    grid-template-columns: repeat(3, 1fr);
+    /* সমান ৩টি কলাম তৈরি করার জন্য */
+    grid-template-rows: auto;
+    /* রো বা সারির উচ্চতা নির্ধারণ করার জন্য */
+    gap: 20px;
+    /* ফ্লেক্স বা গ্রিডের ভেতরের এলিমেন্টগুলোর মাঝখানে ফাঁকা জায়গা তৈরি করা */
+
+    /* Old School Layout */
+    float: left;
+    /* এলিমেন্টকে ডানে বা বামে ভাসিয়ে রাখার জন্য (বর্তমানে কম ব্যবহার হয়) */
+    clear: both;
+    /* ফ্লোট করা এলিমেন্টের প্রভাব মুক্ত করার জন্য */
+}
+
+/* ২. বক্স মডেল এবং সাইজিং (Box Model & Sizing) */
+
+.box-sizing-properties {
+    /* Width & Height */
+    width: 100%;
+    /* এলিমেন্টের প্রস্থ (width) কতটুকু হবে */
+    max-width: 1200px;
+    /* প্রস্থ যেন এর চেয়ে বেশি বড় না হয় (রেসপনসিভের জন্য জরুরি) */
+    min-width: 300px;
+    /* প্রস্থ যেন এর চেয়ে ছোট না হয় */
+    height: 100vh;
+    /* উচ্চতা (height) নির্ধারণ করা (100vh মানে পুরো স্ক্রিন) */
+    max-height: 500px;
+    /* সর্বোচ্চ উচ্চতা নির্ধারণ করা */
+
+    /* Margin & Padding */
+    margin: 20px auto;
+    /* বক্সের *বাইরে* চারপাশ থেকে দূরত্ব তৈরি করা (auto দিলে সেন্টারে আসে) */
+    padding: 15px 30px;
+    /* বক্সের *ভেতরে* কন্টেন্ট থেকে সীমানার দূরত্ব তৈরি করা */
+
+    /* Core Sizing */
+    box-sizing: border-box;
+    /* প্যাডিং ও বর্ডার যোগ করলেও যেন বক্সের আসল সাইজ বড় না হয়ে যায় */
+    overflow: hidden;
+    /* কন্টেন্ট বক্সের বাইরে চলে গেলে তা লুকিয়ে ফেলা (hidden, scroll, auto) */
+    overflow-x: auto;
+    /* ডানে-বামে বড় হলে স্ক্রলবার আনা */
+    overflow-y: scroll;
+    /* উপর-নিচে বড় হলে স্ক্রলবার আনা */
+}
+
+/* ৩. পজিশনিং (Positioning) */
+
+.position-properties {
+    position: absolute;
+    /* এলিমেন্টকে প্যারেন্টের সাপেক্ষে নির্দিষ্ট জায়গায় বসানো (relative, fixed, sticky) */
+    top: 50px;
+    /* পজিশন করা এলিমেন্টকে উপর থেকে নিচে নামানো */
+    bottom: 10px;
+    /* নিচ থেকে উপরে ওঠানো */
+    left: 20px;
+    /* বাম থেকে ডানে সরানো */
+    right: 0;
+    /* ডান থেকে বামে সরানো */
+    z-index: 999;
+    /* একটার ওপর আরেকটা এলিমেন্ট থাকলে, কোনটা উপরে দেখাবে তা ঠিক করা */
+}
+
+/* ৪. ব্যাকগ্রাউন্ড এবং ভিজ্যুয়ালস (Background & Visuals) */
+
+.background-properties {
+    /* Colors */
+    background-color: #f4f7f6;
+    /* বক্সের ব্যাকগ্রাউন্ডে সলিড রং দেওয়া */
+    opacity: 0.8;
+    /* এলিমেন্টটিকে কতটা স্বচ্ছ বা ঘোলা দেখাবে (0.0 থেকে 1.0 পর্যন্ত) */
+
+    /* Images & Gradients */
+    background-image: url('image.jpg');
+    /* ব্যাকগ্রাউন্ডে ছবি বসানো */
+    background-image: linear-gradient(to right, #ff7e5f, #feb47b);
+    /* ব্যাকগ্রাউন্ডে মিক্স করা কালার (Gradient) দেওয়া */
+    background-size: cover;
+    /* ছবিটি যেন বক্সের ভেতর পারফেক্টলি ফিট হয় */
+    background-position: center center;
+    /* ছবিটির কোন অংশ ফোকাস হবে (সেন্টার) */
+    background-repeat: no-repeat;
+    /* ছোট ছবি হলে যেন বারবার রিপিট না হয় */
+    background-attachment: fixed;
+    /* স্ক্রল করার সময় ব্যাকগ্রাউন্ডের ছবি যেন ফিক্সড থাকে (প্যারালাক্স ইফেক্ট) */
+
+    /* Filters */
+    filter: blur(5px);
+    /* ইমেজ বা এলিমেন্টকে ঝাপসা করা (brightness, contrast-ও করা যায়) */
+    backdrop-filter: blur(10px);
+    /* পেছনের ব্যাকগ্রাউন্ডকে গ্লাসের মতো ঝাপসা করা */
+}
+
+/* ৫. বর্ডার এবং শ্যাডো (Border & Shadows) */
+
+.border-shadow-properties {
+    /* Border */
+    border: 2px solid #000000;
+    /* চারপাশের বর্ডারের পুরুত্ব, স্টাইল (solid/dashed) এবং রং */
+    border-top: 1px solid #ccc;
+    /* শুধুমাত্র উপরে বর্ডার দেওয়া */
+    border-radius: 12px;
+    /* বক্সের চারপাশের ধারালো কোনাগুলোকে গোল (round) করা */
+
+    /* Outline (বর্ডারের বাইরে আরেকটা বর্ডার) */
+    outline: none;
+    /* ইনপুট ফিল্ডে ক্লিক করলে যে ডিফল্ট দাগ আসে, তা বন্ধ করা */
+    outline-offset: 5px;
+    /* বর্ডার থেকে আউটলাইনের দূরত্ব */
+
+    /* Shadows */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    /* এলিমেন্টের পেছনে থ্রিডি ছায়া তৈরি করা */
+}
+
+/* ৬. টাইপোগ্রাফি ও টেক্সট (Typography & Text) */
+
+.typography-properties {
+    /* Font Styling */
+    font-family: 'Poppins', sans-serif;
+    /* লেখার ফন্ট ডিজাইন চেঞ্জ করা */
+    font-size: 16px;
+    /* লেখা কত বড় বা ছোট হবে */
+    font-weight: bold;
+    /* লেখা কতটা মোটা বা চিকন হবে (400, 600, 700) */
+    font-style: italic;
+    /* লেখাকে বাঁকা করার জন্য */
+
+    /* Color & Alignment */
+    color: #333333;
+    /* শুধুমাত্র টেক্সট বা লেখার রং পরিবর্তন করা */
+    text-align: center;
+    /* লেখাকে বামে, ডানে বা মাঝে (center/justify) রাখা */
+
+    /* Text Formatting */
+    text-transform: uppercase;
+    /* সব লেখাকে বড় হাতের (uppercase), ছোট হাতের বা ক্যাপিটালাইজ করা */
+    text-decoration: none;
+    /* লিংকের নিচের আন্ডারলাইন (underline) মুছে ফেলা বা যুক্ত করা */
+    line-height: 1.6;
+    /* এক লাইন থেকে নিচের লাইনের মাঝখানের ফাঁকা জায়গা বাড়ানো */
+    letter-spacing: 2px;
+    /* একটা অক্ষর থেকে আরেকটা অক্ষরের মাঝের দূরত্ব বাড়ানো */
+    word-spacing: 5px;
+    /* একটা শব্দ থেকে আরেকটা শব্দের দূরত্ব বাড়ানো */
+
+    /* Overflowing Text */
+    white-space: nowrap;
+    /* লেখা যেন ভেঙে নিচের লাইনে না যায় */
+    text-overflow: ellipsis;
+    /* বড় টেক্সটের শেষে তিন ডট (...) দেখিয়ে দেওয়া */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* লেখার নিচে ছায়া দেওয়া */
+}
+
+/* ৭. অ্যানিমেশন ও ট্রান্সফর্ম (Animations & Transforms) */
+
+.animation-properties {
+    /* Transitions */
+    transition: all 0.3s ease-in-out;
+    /* হোভার বা ক্লিক করলে চেঞ্জটা যেন হুট করে না হয়ে স্মুথলি হয় */
+    transition-delay: 0.1s;
+    /* হোভার করার কতক্ষণ পর ইফেক্ট শুরু হবে */
+
+    /* Transforms (2D/3D) */
+    transform: scale(1.05);
+    /* হোভার করলে এলিমেন্টকে একটু জুম বা বড় করা */
+    transform: translateY(-10px);
+    /* এলিমেন্টকে উপর বা নিচে সরানো */
+    transform: rotate(45deg);
+    /* এলিমেন্টকে নির্দিষ্ট ডিগ্রিতে ঘোরানো */
+
+    /* Keyframe Animations */
+    animation: slideIn 2s infinite;
+    /* নিজের বানানো অ্যানিমেশন যুক্ত করা (infinite মানে চলতেই থাকবে) */
+}
+
+
+/* ৮. ইউজার ইন্টারঅ্যাকশন ও অন্যান্য (User Interaction & Advanced) */
+
+.interaction-properties {
+    cursor: pointer;
+    /* বাটনে মাউস নিলে কার্সর যেন হাতের আইকনে (pointer) বদলে যায় */
+    pointer-events: none;
+    /* বাটনটি ডিজেবল থাকলে তাতে যেন ক্লিক কাজ না করে */
+    user-select: none;
+    /* ইউজার যেন টেক্সটটি মাউস দিয়ে হাইলাইট বা কপি করতে না পারে */
+
+    /* Media & Sizing constraints */
+    aspect-ratio: 16 / 9;
+    /* ইমেজ বা ভিডিওর রেশিও ঠিক রাখা (যাতে চ্যাপ্টা না হয়) */
+    object-fit: cover;
+    /* ইমেজ বক্সের ভেতর সুন্দরভাবে ফিট করানো (বক্সের বাইরে যাবে না, চ্যাপ্টাও হবে না) */
+    object-position: top;
+    /* ইমেজের কোন অংশটি ফোকাস হবে তা ঠিক করা */
+
+    /* Form Elements */
+    accent-color: #ff0000;
+    /* রেডিও বাটন বা চেকবক্সের ডিফল্ট নীল রং নিজের ইচ্ছামতো চেঞ্জ করা */
+    appearance: none;
+    /* ব্রাউজারের ডিফল্ট ডিজাইন মুছে ফেলে নিজের মতো ডিজাইন করার সুযোগ পাওয়া */
+
+    /* Smoothness */
+    scroll-behavior: smooth;
+    /* পেজের কোনো লিংকে ক্লিক করলে যেন স্মুথলি স্ক্রল হয়ে যায় */
+}
