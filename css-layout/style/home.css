@@ -1,0 +1,37 @@
+body {
+    background-color: lightpink;
+    max-width: 1280px;
+    /* border: 1px solid darkorange; */
+    margin: 0 auto;
+}
+
+.banner {
+    display: flex;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.banner-content {
+    flex: 1;
+    text-align: justify;
+}
+
+.banner-content button {
+    background-color: lightgreen;
+    border-radius: 5px;
+    padding: 5px 8px;
+    border: 1px solid blue;
+    cursor: pointer;
+}
+
+.banner-content button:hover {
+    background-color: lightseagreen;
+}
+
+.image-content {
+    flex: 1;
+}
+
+.image-content img {
+    width: 100%;
+}
