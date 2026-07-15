@@ -1,0 +1,10 @@
+| Property             | সহজে মনে রাখার উপায়                              |
+| -------------------- | ------------------------------------------------- |
+| `position: relative` | Absolute element-এর parent/reference বানানোর জন্য |
+| `position: absolute` | নির্দিষ্ট জায়গায় element বসানোর জন্য            |
+| `object-fit: cover`  | Image কেটে হলেও পুরো box fill করবে, বিকৃত হবে না  |
+| `display: flex`      | এক লাইনে বা এক কলামে item সাজানোর জন্য            |
+| `display: grid`      | Row + Column layout তৈরির জন্য                    |
+| `flex-grow: 1`       | খালি জায়গা নিয়ে element বড় হবে                 |
+| `justify-self: end`  | Grid item-কে নিজের cell-এর ডান/শেষ দিকে পাঠায়    |
+| `position: sticky`   | Scroll করলে element নির্দিষ্ট জায়গায় আটকে থাকে  |
