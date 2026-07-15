@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital-Management-System</title>
+    <link rel="icon" href="img/programming.webp" type="image" />
+    <link rel="stylesheet" href="css/hms.css" />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a
+            href="HMS.html"
+            onclick="showSection('Hospital Management Form')"
+            target="_self"
+            >Hospital Management Form</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <section id="home" class="active"><h1>Welcome To HMS Page</h1></section>
+    <div class="container">
+      <h2>🏠 Hospital Management System Form</h2>
+      <form action="#">
+        <div class="section">
+          <div class="row">
+            <div class="first_input">
+              <label for="Dr_name">Doctor's Name:</label
+              ><input type="text" placeholder="Doctor's Name" />
+            </div>
+            <div class="first_input">
+              <label for="Dr_Age">Doctor's Age:</label
+              ><input type="text" placeholder="Doctor's Age" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="first_input">
+              <label for="Dr_P_address">Doctor's Present Address:</label
+              ><input type="text" placeholder="Doctor's Present Address" />
+            </div>
+            <div class="first_input">
+              <label for="Dr_date_of_birth">Doctor's Date Of Birth:</label
+              ><input type="date" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="first_input">
+              <label for="Dr_User_Name">Doctor's User Name:</label
+              ><input type="text" placeholder="Doctor's User Name" />
+            </div>
+            <div class="first_input">
+              <label for="Dr_User_Email">Doctor's user Email:</label
+              ><input type="email" placeholder="Doctor's User Email" />
+            </div>
+          </div>
+          <div class="section">
+            <div class="row">
+              <div class="first_input">
+                <label for="Passant_name">Passant Name:</label
+                ><input type="text" placeholder="Passant Name" />
+              </div>
+              <div class="first_input">
+                <label for="Passant_age">Passant Age:</label
+                ><input type="text" placeholder="Passant Age" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="first_input">
+                <label for="Passant_present_Address"
+                  >Passant Present Address:</label
+                ><input type="text" placeholder="Passant Present Address" />
+              </div>
+              <div class="first_input">
+                <label for="Passant_Date_of_Birth">Passant Date Of Birth:</label
+                ><input type="date" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="first_input">
+                <label for="Passant_User_Naem">Passant User Name:</label
+                ><input type="text" placeholder="Passant User Name" />
+              </div>
+              <div class="first_input">
+                <label for="Passant_Email">Passant user Email:</label
+                ><input type="email" placeholder="Passant Email" />
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="row">
+              <div class="first_input">
+                <label for="hoopital_admin_name">Hospital Admin Name:</label
+                ><input type="text" placeholder="Hospital Admin Name" />
+              </div>
+              <div class="first_input">
+                <label for="Hospital_Admin_Email">Hospital Admin Email:</label
+                ><input type="email" placeholder="Hospital Admin Email" />
+              </div>
+            </div>
+            <div class="section">
+              <div class="row">
+                <div class="first_input">
+                  <label for="Laptop_Model_Name">Laptop Model Name:</label
+                  ><input type="text" placeholder="Laptop Model Name" />
+                </div>
+                <div class="first_input">
+                  <label for="Laptop_Price_Unit">Laptop Price Unit:</label
+                  ><input type="text" placeholder="Laptop Price Unit" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="first_input">
+                <label for="Laptop_Model_Name">Laptop Name List:</label
+                ><select>
+                  <option value="MacBook">MacBook</option>
+                  <option value="HP">HP</option>
+                  <option value="Dell">Dell</option>
+                  <option value="Asus">Asus</option>
+                  <option value="MSI">MSI</option>
+                  <option value="Lanavo">Lanavo</option>
+                </select>
+              </div>
+              <div class="first_input">
+                <label for="Laptop_Price_Unit">Laptop Price List:</label
+                ><select>
+                  <option value="MacBook">MacBook-120,000</option>
+                  <option value="HP">HP-70,000</option>
+                  <option value="Dell">Dell-55,000</option>
+                  <option value="Asus">Asus-75,000</option>
+                  <option value="MSI">MSI-650000</option>
+                  <option value="Lanavo">Lanavo-780000</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="submit">Apply Form</button>
+      </form>
+    </div>
+  </body>
+</html>

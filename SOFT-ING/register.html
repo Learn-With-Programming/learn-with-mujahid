@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Register Form</title>
+    <link rel="stylesheet" href="css/register.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="icon" href="img/programming.webp" type="image" />
+    <script src="Js/home.js"></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="login.html" onclick="showSection('login')" target="_self"
+            >Login</a
+          >
+        </li>
+        <li>
+          <a href="register.html" onclick="showSection('registration')"
+            >Registration</a
+          >
+        </li>
+        <li>
+          <a
+            href="admission.html"
+            onclick="showSection('admission')"
+            target="_self"
+            >Admission</a
+          >
+        </li>
+        <li>
+          <a
+            href="HMS.html"
+            onclick="showSection('Hospital Management Form')"
+            target="_self"
+            >Hospital Management Form</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <section id="home" class="active">
+      <h1>Welcome To Register Page</h1>
+    </section>
+    <div class="container">
+      <h1>Student Admission Account Registration</h1>
+      <form>
+        <div class="section">
+          <div class="row">
+            <div class="input_group">
+              <label>Student User Name. :</label
+              ><input type="text" placeholder="Your Full Name" />
+            </div>
+            <div class="input_group">
+              <label>Student Father Name. :</label
+              ><input type="text" placeholder="Your Father Name" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="input_group">
+              <label>Student User Password. :</label
+              ><input type="password" placeholder="student User password" />
+            </div>
+            <div class="input_group">
+              <label>Student User Email. :</label
+              ><input type="email" placeholder="student User Email" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="input_group">
+              <label>Student Mother Name. :</label
+              ><input type="text" placeholder="Your Mother Name" />
+            </div>
+            <div class="input_group">
+              <label>Student Data Of Birth. :</label><input type="date" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="input_group">
+              <label>Student Phone Number. :</label
+              ><input type="tel" placeholder="Your Phone Number" />
+            </div>
+            <div class="input_group">
+              <label>Student Gender. :</label
+              ><select>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input_group">
+              <label>Student Religion. :</label
+              ><select>
+                <option value="Islam">Islam</option>
+                <option value="Hindu">Hindu</option>
+              </select>
+            </div>
+            <div class="input_group">
+              <label>Student Nationality. :</label
+              ><select>
+                <option value="Bangladeshi">Bangladeshi</option>
+              </select>
+            </div>
+            <div class="input_group">
+              <label>Date. :</label><input type="date" />
+            </div>
+          </div>
+        </div>
+        <button type="submit">
+          <a href="admission.html">Account Register</a>
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
