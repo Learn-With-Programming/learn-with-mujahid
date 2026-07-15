@@ -1,0 +1,26 @@
+2.
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Learn-With-Programming/Practice-Project-101.git
+git remote add origin https://github.com/Learn-With-Programming/E-commerce-Bd-Shope.git
+https://learn-with-programming.github.io/E-commerce-Bd-Shope/
+git push -u origin main
+
+Commit Author Check:
+git log --pretty=full -1
+
+code change Commande:
+git add .
+git commit -m "change the comment something missing section"
+git push
+
+
+echo "# copy-shop-bd" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Learn-With-Programming/copy-shop-bd.git
+git push -u origin main
